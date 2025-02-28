@@ -93,6 +93,7 @@ describe("Login Tests", () => {
     cy.get("#user-name").clear().type(this.data.specialChars.username);
     cy.get("#password").clear().type(this.data.validUser.password);
     cy.get("#login-button").click();
+    //hi
   });
 
   it("TC_20 - Login with Special Characters in Password", function () {
