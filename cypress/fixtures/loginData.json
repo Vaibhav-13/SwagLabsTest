@@ -1,0 +1,21 @@
+{
+    "validUser": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    },
+    "otherValidUsers": [
+      { "username": "problem_user", "password": "secret_sauce" },
+      { "username": "performance_glitch_user", "password": "secret_sauce" },
+      { "username": "error_user", "password": "secret_sauce" },
+      { "username": "visual_user", "password": "secret_sauce" }
+    ],
+    "caseSensitive": {
+      "username": "STANDARD_USER",
+      "password": "secret_sauce",
+      "wrongPassword": "SECRET_SAUCE"
+    },
+    "invalidUser": {
+      "username": "invalid_user",
+      "password": "wrong_password"
+    }
+  }
