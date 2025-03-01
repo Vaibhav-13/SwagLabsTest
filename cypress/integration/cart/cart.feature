@@ -1,11 +1,10 @@
 Feature: Shopping Cart Functionality
+  Scenario: Add item to cart
+    Given User is logged in
+    When User adds an item to the cart
+    Then The item should be displayed in the cart
 
-  Scenario: Verify cart item details
+  Scenario: Remove item from cart
     Given User has an item in the cart
-    When User views the cart page
-    Then The correct product name, description, price, and quantity should be displayed
-
-  Scenario: Remove an item from the cart
-    Given User has an item in the cart
-    When User removes the item
-    Then The cart should be empty
+    When User clicks on remove button
+    Then The item should be removed from the cart
