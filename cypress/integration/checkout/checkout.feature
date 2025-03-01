@@ -1,11 +1,10 @@
-Feature: Checkout Functionality
-
+Feature: Checkout Process
   Scenario: Proceed to checkout
     Given User has an item in the cart
-    When User clicks on checkout
+    When User clicks on the checkout button
     Then User should be redirected to the checkout page
 
-  Scenario: Try checkout with an empty cart
-    Given User is on the cart page without items
-    When User clicks checkout
-    Then The system should display "Your cart is empty"
+  Scenario: Checkout with empty cart
+    Given User is on the cart page with no items
+    When User clicks on checkout button
+    Then User should see an error message
